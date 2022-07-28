@@ -28,4 +28,13 @@
 <img width="150" src="https://blogger.googleusercontent.com/img/a/AVvXsEg_c0M0xoiE-dxq__qS2xk-r6tx22wN2WM7f1QTPX1V1KtEPl2A4RxHzHYz0pPQeqBkhVSvqQ7r-t50JjgV9TOoUEk6DlYmAWmsxJqCjA7OGXKyr1oXNPUaaYWJ7_waUeXz3LyN412Xf49AMK6id0lW6lbcd2lA7vILxQZpb-Xd7msz3H2XzVwmKhka" alt="" />
 </td>
 </tr>
+<tr>
+<td>
+<a href="https://play.google.com/store/apps/details?id=com.ekabav.tasks">Google Play</a>
+</td>
+	</tr><tr>
+<td>
+<a href="https://eb-app.blogspot.com/2022/07/gorevlerini-yonet.html">Web Site</a>
+</td>
+</tr>
 </table>
