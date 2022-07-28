@@ -1,10 +1,10 @@
 # tasks
- Task Managment
+ Task Managment - Görevlerini Yönet Projesi
 <table style="border:1px solid #ddd; padding:10px;"width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><h2>Herkese merhabalar!</h2>
     <p>Bu projemde Hızlı ve Güvenli olarak çokça tercih edilen veri tabanı olan Hive ile bir Task ToDo projesi geliştirdim.<br />
-    Projemde Yeni Göörevler eklenebilir, Tamamlandı olarak işaretlenip otomatik taşınır, Silmek için kaydırılarak Geri dönüşüme taşınır ve Geri dönüşümde iken tekrar kaydırılırsa kalıcı olarak silinir.
+    Projemde Yeni Görevler eklenebilir, Tamamlandı olarak işaretlenip otomatik taşınır, Silmek için kaydırılarak Geri dönüşüme taşınır ve Geri dönüşümde iken tekrar kaydırılırsa kalıcı olarak silinir.
     Google Play üzerinden herkese açık hizmet edebilecek şekilde yayınladım. Projeyi geliştirmeye devam ederek Google Play üzerinden güncellemeler yapacağım (Tema ayarları vs.).
     </p></td>
   </tr>
