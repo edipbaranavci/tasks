@@ -4,7 +4,7 @@ import 'package:tasks/constants.dart';
 import 'package:tasks/screens/task_add_screen.dart';
 import '../models/tasks_todo.dart';
 import '../screens/left_drawer.dart';
-import '../widgets/global/floating_action_button.dart';
+import '../widgets/private/home/floating_action_button.dart';
 import '../widgets/global/list_tasks_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,8 +21,8 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         drawer: CustomLeftDrawer(),
-        appBar: AppBar(title: Text(_constants.screenTitle)),
-        floatingActionButton: CustomFloatingActionButton(
+        appBar: AppBar(title: Text(_constants.pageTitle)),
+        floatingActionButton: HomePageFloatingActionButton(
           title: _constants.fabTitle,
           widget: const TaskAddScreen(),
         ),

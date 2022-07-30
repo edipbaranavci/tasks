@@ -14,7 +14,7 @@ class _TaskAddScreenState extends TaskAddScreenView {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(constants.title),
+        title: Text(constants.screenTitle),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),

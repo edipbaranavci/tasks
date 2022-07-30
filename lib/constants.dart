@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Constants {
   static const String tasksBoxTitle = 'tasksToDoBox';
   static const String categoriesBoxTitle = 'categoriesToDoBox';
@@ -7,7 +9,7 @@ class Constants {
 
 class TasksAddScreenConstants {
   final String okButtonTitle = 'Tamam';
-  final String title = 'Yeni Görev Ekle';
+  final String screenTitle = 'Yeni Görev Ekle';
   final String submitButtonTitle = 'Görevi Kaydet';
   final String titleControllerHintText = 'Görev Başlığı';
   final String descControllerHintText = 'Görev Açıklaması';
@@ -16,7 +18,7 @@ class TasksAddScreenConstants {
 
 class CategoryAddScreenConstants {
   final String okButtonTitle = 'Tamam';
-  final String title = 'Yeni Kategori Ekle';
+  final String screenTitle = 'Yeni Kategori Ekle';
   final String submitButtonTitle = 'Kategoriyi Kaydet';
   final String categoryTitleControllerHintText = 'Kategori İsmi';
   final String colorDescription = 'Kategori Rengi';
@@ -25,12 +27,13 @@ class CategoryAddScreenConstants {
 
 class LeftDrawerConstats {
   final String screenTitle = 'Görevlerini Yönet';
-  final String completedTitle = 'Tamamlanan Görevler';
-  final String recyleTitle = 'Geri Dönüşüm Kutusu';
+  final String completedPageTitle = 'Tamamlanan Görevler';
+  final String recylePageTitle = 'Geri Dönüşüm Kutusu';
+  final String settingsPageTitle = 'Ayarlar';
 }
 
 class HomePageConstats {
-  final String screenTitle = 'Görevlerim';
+  final String pageTitle = 'Görevlerim';
   final String fabTitle = 'Yeni Görev Ekle';
 }
 
@@ -40,4 +43,25 @@ class ListTaskWidgetConstants {
   final String taskGoToRecyleTitle = 'Görev geri dönüşüme atıldı!';
   final String taskBackToRecyleTitle = 'Görev geri dönüşümden çıkarıldı!';
   final String taskDeletedTitle = 'Görev kalıcı olarak silindi!';
+}
+
+class SettingsPageConstants {
+  final String pageTitle = 'Ayarlarım';
+  final String darkModeTitle = 'Koyu Mod';
+}
+
+class ColorConstants {
+  final List<Color> allColor = [
+    Colors.yellow,
+    Colors.red,
+    Colors.green,
+    Colors.deepPurple,
+    Colors.deepOrange,
+    Colors.brown,
+    Colors.blue,
+    Colors.grey,
+    Colors.cyan,
+    Colors.pink,
+    Colors.teal,
+  ];
 }

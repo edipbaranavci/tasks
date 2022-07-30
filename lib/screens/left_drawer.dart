@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/pages/completed_tasks_page.dart';
 import 'package:tasks/pages/recycle_tasks_page.dart';
+import 'package:tasks/pages/settings_page.dart';
 import 'package:tasks/utils/custom_navigator.dart';
 import 'package:tasks/widgets/private/left_drawer/card_list.dart';
 import '../constants.dart';
@@ -21,25 +22,22 @@ class CustomLeftDrawer extends StatelessWidget {
           ),
           LeftDrawerCardList(
             icon: const Icon(Icons.check_box),
-            title: _constants.completedTitle,
-            onTap: () => CustomNavigator.navigate(
-              context,
-              const CompletedTasksPage(),
-            ),
+            title: _constants.completedPageTitle,
+            onTap: () =>
+                CustomNavigator.navigate(context, const CompletedTasksPage()),
           ),
           LeftDrawerCardList(
             icon: const Icon(Icons.delete),
-            title: _constants.recyleTitle,
-            onTap: () => CustomNavigator.navigate(
-              context,
-              const RecyleTasksPage(),
-            ),
+            title: _constants.recylePageTitle,
+            onTap: () =>
+                CustomNavigator.navigate(context, const RecyleTasksPage()),
           ),
-          //LeftDrawerCardList(
-          //  icon: const Icon(Icons.settings),
-          //  title: 'Ayarlara Git',
-          //  onTap: () {},
-          //),
+          LeftDrawerCardList(
+            icon: const Icon(Icons.settings),
+            title: _constants.settingsPageTitle,
+            onTap: () =>
+                CustomNavigator.navigate(context, const SettingsPage()),
+          ),
         ],
       ),
     );

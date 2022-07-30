@@ -6,6 +6,7 @@ import '../../screens/task_update_screen.dart';
 import '../../utils/custom_navigator.dart';
 import '../private/list_task_widget/task_view_bottom_sheet.dart';
 
+// ignore: must_be_immutable
 class ListTasks extends StatelessWidget {
   ListTasks({
     Key? key,
@@ -75,7 +76,7 @@ class ListTasks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     isDone = ref!.isDone == true ? true : isDone;
-    final _isDoneTextStyle = TextStyle(
+    final isDoneTextStyle = TextStyle(
       decoration:
           isDone == true ? TextDecoration.lineThrough : TextDecoration.none,
     );
@@ -83,7 +84,7 @@ class ListTasks extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 2),
       color: (isDeleted == true || isDone == true)
           ? Theme.of(context).primaryColor.withOpacity(0.7)
-          : Theme.of(context).primaryColor,
+          : Theme.of(context).primaryColorDark,
       child: Dismissible(
         direction: DismissDirection.startToEnd,
         key: UniqueKey(),
@@ -132,13 +133,13 @@ class ListTasks extends StatelessWidget {
                 ),
           title: Text(
             ref!.title,
-            style: _isDoneTextStyle,
+            style: isDoneTextStyle,
           ),
           subtitle: Text(
             ref!.description,
             maxLines: 1,
             overflow: TextOverflow.fade,
-            style: _isDoneTextStyle,
+            style: isDoneTextStyle,
           ),
         ),
       ),
