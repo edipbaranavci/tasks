@@ -13,7 +13,9 @@
     Veritabanı Dart için: 'hive: ^2.2.3',<br/>
     Veritabanı Flutter için: 'hive_flutter: ^1.1.0',<br/>
     Veritabanı adapteri oluşturma eklentisi için: 'hive_generator: ^1.1.3',<br/>
-    Veritabanı adapteri oluşturma için: 'build_runner: ^2.2.0',<br/></td>
+    Veritabanı adapteri oluşturma için: 'build_runner: ^2.2.0',<br/>
+    tema değişimini tetiklemek için 'provider: ^6.0.3',<br/>
+    tema ayarlarını kaydetmek için 'shared_preferences: ^2.0.15'</td>
   </tr>
   <tr>
     <td align="center"><h3>Uygulama Resimleri: </h3><br/>
