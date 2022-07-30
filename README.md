@@ -15,7 +15,8 @@
     Veritabanı adapteri oluşturma eklentisi için: 'hive_generator: ^1.1.3',<br/>
     Veritabanı adapteri oluşturma için: 'build_runner: ^2.2.0',<br/>
     tema değişimini tetiklemek için 'provider: ^6.0.3',<br/>
-    tema ayarlarını kaydetmek için 'shared_preferences: ^2.0.15'</td>
+    tema ayarlarını kaydetmek için 'shared_preferences: ^2.0.15'
+	  <br/></td>
   </tr>
   <tr>
     <td align="center"><h3>Uygulama Resimleri: </h3><br/>
