@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:tasks/widgets/global/empty_task_message_widget.dart';
 import '../constants.dart';
 import '../models/tasks_todo.dart';
-import '../widgets/global/list_tasks_widget.dart';
+import '../widgets/global/tasks_list_card_widget.dart';
 
 class CompletedTasksPage extends StatefulWidget {
   const CompletedTasksPage({Key? key}) : super(key: key);
@@ -12,12 +13,24 @@ class CompletedTasksPage extends StatefulWidget {
 }
 
 class _CompletedTasksPageState extends State<CompletedTasksPage> {
-  final String _apptitle = 'Tamamlanan Görevler';
+  final _constants = CompletedPageConstants();
+
+  int _datasControlCounter(Box<TasksTodo> box) {
+    int counter = 0;
+    var val = box.values;
+    for (var element in val) {
+      if (element.isDone == true && element.isRecycle == false) {
+        counter++;
+      }
+    }
+    return counter;
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text(_apptitle)),
+        appBar: AppBar(title: Text(_constants.pageTitle)),
         body: ValueListenableBuilder(
           valueListenable:
               Hive.box<TasksTodo>(Constants.tasksBoxTitle).listenable(),
@@ -26,25 +39,33 @@ class _CompletedTasksPageState extends State<CompletedTasksPage> {
               return const Center(
                 child: Text(Constants.emptyBoxTitle),
               );
+            } else {
+              if (_datasControlCounter(box) > 0) {
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListView.builder(
+                    itemCount: box.values.length,
+                    itemBuilder: (context, index) {
+                      TasksTodo? ref = box.getAt(index);
+                      if (ref!.isDone == true && ref.isRecycle == false) {
+                        return TasksListCardWidget(
+                          ref: ref,
+                          index: index,
+                          isDone: ref.isDone,
+                        );
+                      } else {
+                        return const SizedBox.shrink();
+                      }
+                    },
+                  ),
+                );
+              } else {
+                return EmptyTaskMessageWidget(
+                  emptyBoxTitle: _constants.emptyBoxTitle,
+                  icon: const Icon(Icons.done_all_rounded, size: 50),
+                );
+              }
             }
-            return Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ListView.builder(
-                itemCount: box.values.length,
-                itemBuilder: (context, index) {
-                  TasksTodo? ref = box.getAt(index);
-                  if (ref!.isDone == true && ref.isRecycle == false) {
-                    return ListTasks(
-                      ref: ref,
-                      index: index,
-                      isDone: ref.isDone,
-                    );
-                  } else {
-                    return const SizedBox();
-                  }
-                },
-              ),
-            );
           },
         ),
       ),

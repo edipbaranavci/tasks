@@ -15,13 +15,14 @@ class ThemeSettings with ChangeNotifier {
   int get getColorIndex => _colorIndex;
   ThemeMode get getThemeMode => _isDark ? ThemeMode.dark : ThemeMode.light;
   ThemeData get getDarkThemeData => ThemeData.dark().copyWith(
-        textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(
-            primary: Colors.white70,
-            backgroundColor: Colors.black,
-          ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          primary: Colors.white70,
+          backgroundColor: Colors.black,
         ),
-      );
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(backgroundColor: Colors.white)));
   ThemeData get getThemeData => ThemeData(
         primarySwatch: _allColors[_colorIndex] as MaterialColor,
         textButtonTheme: TextButtonThemeData(

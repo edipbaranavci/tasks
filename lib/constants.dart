@@ -4,7 +4,7 @@ class Constants {
   static const String tasksBoxTitle = 'tasksToDoBox';
   static const String categoriesBoxTitle = 'categoriesToDoBox';
   static const String appTitle = 'Görevlerini Yönet';
-  static const String emptyBoxTitle = 'Hiç Görev Bulunamadı!';
+  static const String emptyBoxTitle = 'Hiç görev bulunamadı!';
 }
 
 class TasksAddScreenConstants {
@@ -35,6 +35,7 @@ class LeftDrawerConstats {
 class HomePageConstats {
   final String pageTitle = 'Görevlerim';
   final String fabTitle = 'Yeni Görev Ekle';
+  final String emptyBoxTitle = 'Tamamlanmayan görev bulunamadı.';
 }
 
 class ListTaskWidgetConstants {
@@ -48,6 +49,18 @@ class ListTaskWidgetConstants {
 class SettingsPageConstants {
   final String pageTitle = 'Ayarlarım';
   final String darkModeTitle = 'Koyu Mod';
+}
+
+class ReyclePageConstants {
+  final String pageTitle = 'Geri Dönüşüm Kutusu';
+  final String emptyBoxTitle = 'Geri dönüşüm kutusu boş!';
+  final String pageHintTitle =
+      'Görevleri kalıcı olarak silmek için sağa kaydırın';
+}
+
+class CompletedPageConstants {
+  final String pageTitle = 'Tamamlanan Görevler';
+  final String emptyBoxTitle = 'Tamamlanan görev bulunamadı.';
 }
 
 class ColorConstants {
