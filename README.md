@@ -33,7 +33,7 @@
 </tr>
 <tr>
 <td>
-<a href="https://play.google.com/store/apps/details?id=com.ekabav.tasks">Google Play</a>
+<a href="https://play.google.com/store/apps/details?id=com.ekabav.tasks_manager">Google Play</a>
 </td>
 	</tr><tr>
 <td>
